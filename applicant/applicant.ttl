@@ -1,0 +1,529 @@
+@prefix : <http://purl.org/onto-creditrisk/applicant#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://purl.org/onto-creditrisk/applicant#> .
+
+<http://purl.org/onto-creditrisk/applicant#> rdf:type owl:Ontology ;
+                            dcterms:author <https://twitter.com/BENHASSOUN> ;
+                            dcterms:license <https://creativecommons.org/licenses/by/2.0/> ;
+                            dcterms:title "Schema for credit applicant"@en .
+							
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/onto-creditrisk/applicant#Accounts
+:Accounts rdf:type owl:Class ;
+                                                    owl:disjointWith :Age ,
+                                                                     :CreditAmount ,
+                                                                     :CreditDuration ,
+                                                                     :CreditHistory ,
+                                                                     :CreditPurpose ,
+                                                                     :ForeignWorker ,
+                                                                     :Guarantees ,
+                                                                     :Housing ,
+                                                                     :InstallmentAsIncomePerc ,
+                                                                     :Job ,
+                                                                     :OtherCredits ,
+                                                                     :OtherInstallmentPlans ,
+                                                                     :PeopleUnderMaintenance ,
+                                                                     :PersonalStatus ,
+                                                                     :PresentEmployment ,
+                                                                     :PresentResidenceSince ,
+                                                                     :Property ,
+                                                                     :Savings ,
+                                                                     :Telephone ;
+													rdfs:comment "An accounts. This is the bank accounts of an applicant."@en ;
+													rdfs:label "Accounts"@en .
+															
+
+
+###  http://purl.org/onto-creditrisk/applicant#Age
+:Age rdf:type owl:Class ;
+                                               owl:disjointWith :CreditAmount ,
+                                                                :CreditDuration ,
+                                                                :CreditHistory ,
+                                                                :CreditPurpose ,
+                                                                :ForeignWorker ,
+                                                                :Guarantees ,
+                                                                :Housing ,
+                                                                :InstallmentAsIncomePerc ,
+                                                                :Job ,
+                                                                :OtherCredits ,
+                                                                :OtherInstallmentPlans ,
+                                                                :PeopleUnderMaintenance ,
+                                                                :PersonalStatus ,
+                                                                :PresentEmployment ,
+                                                                :PresentResidenceSince ,
+                                                                :Property ,
+                                                                :Savings ,
+                                                                :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Applicant
+:Applicant rdf:type owl:Class .
+
+
+###  #CreditAmount
+:CreditAmount rdf:type owl:Class ;
+                                                        owl:disjointWith :CreditDuration ,
+                                                                         :CreditHistory ,
+                                                                         :CreditPurpose ,
+                                                                         :ForeignWorker ,
+                                                                         :Guarantees ,
+                                                                         :Housing ,
+                                                                         :InstallmentAsIncomePerc ,
+                                                                         :Job ,
+                                                                         :OtherCredits ,
+                                                                         :OtherInstallmentPlans ,
+                                                                         :PeopleUnderMaintenance ,
+                                                                         :PersonalStatus ,
+                                                                         :PresentEmployment ,
+                                                                         :PresentResidenceSince ,
+                                                                         :Property ,
+                                                                         :Savings ,
+                                                                         :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#CreditDuration
+:CreditDuration rdf:type owl:Class ;
+                                                          owl:disjointWith :CreditHistory ,
+                                                                           :CreditPurpose ,
+                                                                           :ForeignWorker ,
+                                                                           :Guarantees ,
+                                                                           :Housing ,
+                                                                           :InstallmentAsIncomePerc ,
+                                                                           :Job ,
+                                                                           :OtherCredits ,
+                                                                           :OtherInstallmentPlans ,
+                                                                           :PeopleUnderMaintenance ,
+                                                                           :PersonalStatus ,
+                                                                           :PresentEmployment ,
+                                                                           :PresentResidenceSince ,
+                                                                           :Property ,
+                                                                           :Savings ,
+                                                                           :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#CreditHistory
+:CreditHistory rdf:type owl:Class ;
+                                                         owl:disjointWith :CreditPurpose ,
+                                                                          :ForeignWorker ,
+                                                                          :Guarantees ,
+                                                                          :Housing ,
+                                                                          :InstallmentAsIncomePerc ,
+                                                                          :Job ,
+                                                                          :OtherCredits ,
+                                                                          :OtherInstallmentPlans ,
+                                                                          :PeopleUnderMaintenance ,
+                                                                          :PersonalStatus ,
+                                                                          :PresentEmployment ,
+                                                                          :PresentResidenceSince ,
+                                                                          :Property ,
+                                                                          :Savings ,
+                                                                          :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#CreditPurpose
+:CreditPurpose rdf:type owl:Class ;
+                                                         owl:disjointWith :ForeignWorker ,
+                                                                          :Guarantees ,
+                                                                          :Housing ,
+                                                                          :InstallmentAsIncomePerc ,
+                                                                          :Job ,
+                                                                          :OtherCredits ,
+                                                                          :OtherInstallmentPlans ,
+                                                                          :PeopleUnderMaintenance ,
+                                                                          :PersonalStatus ,
+                                                                          :PresentEmployment ,
+                                                                          :PresentResidenceSince ,
+                                                                          :Property ,
+                                                                          :Savings ,
+                                                                          :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#ForeignWorker
+:ForeignWorker rdf:type owl:Class ;
+                                                         owl:disjointWith :Guarantees ,
+                                                                          :Housing ,
+                                                                          :InstallmentAsIncomePerc ,
+                                                                          :Job ,
+                                                                          :OtherCredits ,
+                                                                          :OtherInstallmentPlans ,
+                                                                          :PeopleUnderMaintenance ,
+                                                                          :PersonalStatus ,
+                                                                          :PresentEmployment ,
+                                                                          :PresentResidenceSince ,
+                                                                          :Property ,
+                                                                          :Savings ,
+                                                                          :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Guarantees
+:Guarantees rdf:type owl:Class ;
+                                                      owl:disjointWith :Housing ,
+                                                                       :InstallmentAsIncomePerc ,
+                                                                       :Job ,
+                                                                       :OtherCredits ,
+                                                                       :OtherInstallmentPlans ,
+                                                                       :PeopleUnderMaintenance ,
+                                                                       :PersonalStatus ,
+                                                                       :PresentEmployment ,
+                                                                       :PresentResidenceSince ,
+                                                                       :Property ,
+                                                                       :Savings ,
+                                                                       :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Housing
+:Housing rdf:type owl:Class ;
+                                                   owl:disjointWith :InstallmentAsIncomePerc ,
+                                                                    :Job ,
+                                                                    :OtherCredits ,
+                                                                    :OtherInstallmentPlans ,
+                                                                    :PeopleUnderMaintenance ,
+                                                                    :PersonalStatus ,
+                                                                    :PresentEmployment ,
+                                                                    :PresentResidenceSince ,
+                                                                    :Property ,
+                                                                    :Savings ,
+                                                                    :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc
+:InstallmentAsIncomePerc rdf:type owl:Class ;
+                                                                   owl:disjointWith :Job ,
+                                                                                    :OtherCredits ,
+                                                                                    :OtherInstallmentPlans ,
+                                                                                    :PeopleUnderMaintenance ,
+                                                                                    :PersonalStatus ,
+                                                                                    :PresentEmployment ,
+                                                                                    :PresentResidenceSince ,
+                                                                                    :Property ,
+                                                                                    :Savings ,
+                                                                                    :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Job
+:Job rdf:type owl:Class ;
+                                               owl:disjointWith :OtherCredits ,
+                                                                :OtherInstallmentPlans ,
+                                                                :PeopleUnderMaintenance ,
+                                                                :PersonalStatus ,
+                                                                :PresentEmployment ,
+                                                                :PresentResidenceSince ,
+                                                                :Property ,
+                                                                :Savings ,
+                                                                :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#OtherCredits
+:OtherCredits rdf:type owl:Class ;
+                                                        owl:disjointWith :OtherInstallmentPlans ,
+                                                                         :PeopleUnderMaintenance ,
+                                                                         :PersonalStatus ,
+                                                                         :PresentEmployment ,
+                                                                         :PresentResidenceSince ,
+                                                                         :Property ,
+                                                                         :Savings ,
+                                                                         :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans
+:OtherInstallmentPlans rdf:type owl:Class ;
+                                                                 owl:disjointWith :PeopleUnderMaintenance ,
+                                                                                  :PersonalStatus ,
+                                                                                  :PresentEmployment ,
+                                                                                  :PresentResidenceSince ,
+                                                                                  :Property ,
+                                                                                  :Savings ,
+                                                                                  :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance
+:PeopleUnderMaintenance rdf:type owl:Class ;
+                                                                  owl:disjointWith :PersonalStatus ,
+                                                                                   :PresentEmployment ,
+                                                                                   :PresentResidenceSince ,
+                                                                                   :Property ,
+                                                                                   :Savings ,
+                                                                                   :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#PersonalStatus
+:PersonalStatus rdf:type owl:Class ;
+                                                          owl:disjointWith :PresentEmployment ,
+                                                                           :PresentResidenceSince ,
+                                                                           :Property ,
+                                                                           :Savings ,
+                                                                           :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#PresentEmployment
+:PresentEmployment rdf:type owl:Class ;
+                                                             owl:disjointWith :PresentResidenceSince ,
+                                                                              :Property ,
+                                                                              :Savings ,
+                                                                              :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#PresentResidenceSince
+:PresentResidenceSince rdf:type owl:Class ;
+                                                                 owl:disjointWith :Property ,
+                                                                                  :Savings ,
+                                                                                  :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Property
+:Property rdf:type owl:Class ;
+                                                    owl:disjointWith :Savings ,
+                                                                     :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Savings
+:Savings rdf:type owl:Class ;
+                                                   owl:disjointWith :Telephone .
+
+
+###  http://purl.org/onto-creditrisk/applicant#Telephone
+:Telephone rdf:type owl:Class .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/onto-creditrisk/applicant#hasProperty
+:hasProperty rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasAccounts
+:hasAccounts rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain :Applicant ;
+                                                       rdfs:range :Accounts .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasAge
+:hasAge rdf:type owl:ObjectProperty ;
+                                                  owl:inverseOf :isAgeOf .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasCreditAmount
+:hasCreditAmount rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasCreditDuration
+:hasCreditDuration rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasCreditHistory
+:hasCreditHistory rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasCreditPurpose
+:hasCreditPurpose rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasForeignWorker
+:hasForeignWorker rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasGuarantees
+:hasGuarantees rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasHousing
+:hasHousing rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasInstallmentRateInPercentage
+:hasInstallmentRateInPercentage rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasJob
+:hasJob rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasNumberOfPeople
+:hasNumberOfPeople rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasOtherCredit
+:hasOtherCredit rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasOtherInstallmentPlans
+:hasOtherInstallmentPlans rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasPersonalStatus
+:hasPersonalStatus rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasPresentEmployment
+:hasPresentEmployment rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasPresentResidenceSince
+:hasPresentResidenceSince rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasSavings
+:hasSavings rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#hasTelephone
+:hasTelephone rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/onto-creditrisk/applicant#isAgeOf
+:isAgeOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  account_value
+:account_value rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Accounts ;
+                                                         rdfs:range xsd:string .
+
+
+###  applicant_age
+:applicant_age rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Age ;
+                                                         rdfs:range xsd:integer .
+
+
+###  applicant_housing
+:applicant_housing rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain :Housing ;
+                                                             rdfs:range xsd:boolean .
+
+
+###  applicant_id
+:applicant_id rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain :Applicant ;
+                                                        rdfs:range xsd:string .
+
+
+###  applicant_job
+:applicant_job rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :Job ;
+                                                         rdfs:range xsd:string .
+
+
+###  applicant_property
+:applicant_property rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain :Property ;
+                                                              rdfs:range xsd:string .
+
+
+###  applicant_savings
+:applicant_savings rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain :Savings ;
+                                                             rdfs:range xsd:string .
+
+
+###  applicant_telephone
+:applicant_telephone rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain :Telephone ;
+                                                               rdfs:range xsd:string .
+
+
+###  credit_amount
+:credit_amount rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :CreditAmount ;
+                                                         rdfs:range xsd:string .
+
+
+###  credit_duration
+:credit_duration rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain :CreditDuration ;
+                                                           rdfs:range xsd:integer .
+
+
+###  credit_guarantees
+:credit_guarantees rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain :Guarantees ;
+                                                             rdfs:range xsd:boolean .
+
+
+###  credit_history
+:credit_history rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain :CreditHistory ;
+                                                          rdfs:range xsd:string .
+
+
+###  credit_purpose
+:credit_purpose rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain :CreditPurpose ;
+                                                          rdfs:range xsd:string .
+
+
+###  first_name
+:first_name rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :Applicant ;
+                                                      rdfs:range xsd:string .
+
+
+###  foreign_worker
+:foreign_worker rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain :ForeignWorker ;
+                                                          rdfs:range xsd:string .
+
+
+###  installment_as_income_perc
+:installment_as_income_perc rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain :InstallmentAsIncomePerc ;
+                                                                      rdfs:range xsd:string .
+
+
+###  last_name
+:last_name rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain :Applicant ;
+                                                     rdfs:range xsd:string .
+
+
+###  other_credits
+:other_credits rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :OtherCredits ;
+                                                         rdfs:range xsd:string .
+
+
+###  other_installment_plans
+:other_installment_plans rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain :OtherInstallmentPlans ;
+                                                                   rdfs:range xsd:string .
+
+
+###  people_under_maintenance
+:people_under_maintenance rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain :PeopleUnderMaintenance ;
+                                                                    rdfs:range xsd:string .
+
+
+###  personal_status
+:personal_status rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain :PersonalStatus ;
+                                                           rdfs:range xsd:string .
+
+
+###  present_employment
+:present_employment rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain :PresentEmployment ;
+                                                              rdfs:range xsd:string .
+
+
+###  present_residence_since
+:present_residence_since rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain :PresentResidenceSince ;
+                                                                   rdfs:range xsd:string .

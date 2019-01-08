@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/onto-creditrisk/applicant#"
+     xml:base="http://purl.org/onto-creditrisk/applicant"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://purl.org/onto-creditrisk/applicant#">
+        <dcterms:author rdf:resource="https://twitter.com/BENHASSOUN"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/2.0/"/>
+        <dcterms:title xml:lang="en">Schema for credit applicant</dcterms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasAccounts -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasAccounts">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Applicant"/>
+        <rdfs:range rdf:resource="http://purl.org/onto-creditrisk/applicant#Accounts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasAge">
+        <owl:inverseOf rdf:resource="http://purl.org/onto-creditrisk/applicant#isAgeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasCreditAmount -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasCreditAmount"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasCreditDuration -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasCreditDuration"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasCreditHistory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasCreditHistory"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasCreditPurpose -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasCreditPurpose"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasForeignWorker -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasForeignWorker"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasGuarantees -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasGuarantees"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasHousing -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasHousing"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasInstallmentRateInPercentage -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasInstallmentRateInPercentage"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasJob -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasJob"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasNumberOfPeople -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasNumberOfPeople"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasOtherCredit -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasOtherCredit"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasOtherInstallmentPlans -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasOtherInstallmentPlans"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasPersonalStatus -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasPersonalStatus"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasPresentEmployment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasPresentEmployment"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasPresentResidenceSince -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasPresentResidenceSince"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasProperty"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasSavings -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasSavings"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#hasTelephone -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#hasTelephone"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#isAgeOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/onto-creditrisk/applicant#isAgeOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#account_value -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#account_value">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Accounts"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_age -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_age">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_housing -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_housing">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_id">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_job -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_job">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_property -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_property">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_savings -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_savings">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#applicant_telephone -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#applicant_telephone">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#credit_amount -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#credit_amount">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditAmount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#credit_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#credit_duration">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditDuration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#credit_guarantees -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#credit_guarantees">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#credit_history -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#credit_history">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditHistory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#credit_purpose -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#credit_purpose">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#first_name">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#foreign_worker -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#foreign_worker">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#installment_as_income_perc -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#installment_as_income_perc">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#last_name">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#other_credits -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#other_credits">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#other_installment_plans -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#other_installment_plans">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#people_under_maintenance -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#people_under_maintenance">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#personal_status -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#personal_status">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#present_employment -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#present_employment">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#present_residence_since -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/onto-creditrisk/applicant#present_residence_since">
+        <rdfs:domain rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Accounts -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Accounts">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Age"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditAmount"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditDuration"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditHistory"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+        <rdfs:comment xml:lang="en">An accounts. This is the bank accounts of an applicant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Accounts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Age -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Age">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditAmount"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditDuration"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditHistory"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Applicant -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Applicant"/>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#CreditAmount -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#CreditAmount">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditDuration"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditHistory"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#CreditDuration -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#CreditDuration">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditHistory"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#CreditHistory -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#CreditHistory">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#CreditPurpose"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#CreditPurpose -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#CreditPurpose">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#ForeignWorker"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#ForeignWorker -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#ForeignWorker">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Guarantees"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Guarantees -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Guarantees">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Housing"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Housing -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Housing">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#InstallmentAsIncomePerc">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Job"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Job -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Job">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherCredits"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#OtherCredits -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#OtherCredits">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#OtherInstallmentPlans">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#PeopleUnderMaintenance">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PersonalStatus"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#PersonalStatus -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#PersonalStatus">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentEmployment"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#PresentEmployment -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#PresentEmployment">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#PresentResidenceSince -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#PresentResidenceSince">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Property"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Property -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Property">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Savings"/>
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Savings -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Savings">
+        <owl:disjointWith rdf:resource="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/onto-creditrisk/applicant#Telephone -->
+
+    <owl:Class rdf:about="http://purl.org/onto-creditrisk/applicant#Telephone"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
